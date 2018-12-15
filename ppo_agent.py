@@ -9,7 +9,7 @@ from model import PPO_Actor_Critic
 BATCH_SIZE = 1024         # minibatch size
 MIN_BATCH_NUM = 32        # the minimum number of batch in each learning epoch
 GAMMA = 0.99              # discount factor
-TAU = 0.99                # discount factor
+TAU = 0.99                # GAE factor (General advantage estimator)
 LEARNING_RATE = 1e-4      # learning rate of the actor
 EPSILON = 1e-5            # epsilon of Adam
 WEIGHT_DECAY = 1e-4       # weight decay of Adam
